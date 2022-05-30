@@ -64,12 +64,15 @@ Things you may want to cover:
     This will start up Puma, a web server distributed with Rails by default. To see your application in action, open a browser window and navigate to http://localhost:3000. You should see the Ekanek Login page:
 
     Pages:(Screenshot attached in github)
-
-        1-Login Page - (https://raw.githubusercontent.com/madhavanror/EkanekUpload/main/app/assets/images/Login-form.png)
-        2-Signup Page       
-        3-Document Page
-        4-New Document Page
-
+    
+     1 - Login Page
+     ![](https://raw.githubusercontent.com/madhavanror/EkanekUpload/main/app/assets/images/Login-form.png)
+     2 - Signup page
+     ![](https://raw.githubusercontent.com/madhavanror/EkanekUpload/main/app/assets/images/create-new-account.png)
+     3 - Documents Page
+     ![](https://raw.githubusercontent.com/madhavanror/EkanekUpload/main/app/assets/images/dashboard.png)
+     4 - New Document Page
+     ![](https://raw.githubusercontent.com/madhavanror/EkanekUpload/main/app/assets/images/create-new-document.png)
 
 * The Rails Test Runner
 
