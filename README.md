@@ -65,13 +65,8 @@ Things you may want to cover:
 
     Pages:(Screenshot attached in github)
 
-        1-Login Page
-        
-        ![My Image](images/Login-form.png)
-        ![Image](https://github.com/madhavanror/EkanekUpload/blob/main/app/assets/images/Login-form.png)
-         
-        2-Signup Page
-        
+        1-Login Page 
+        2-Signup Page       
         3-Document Page
         4-New Document Page
 
