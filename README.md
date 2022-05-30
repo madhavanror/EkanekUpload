@@ -10,6 +10,7 @@ Things you may want to cover:
     Before you install Rails, you should check to make sure that your system has the proper prerequisites installed. These include:
 
     Ruby
+
     SQLite3
 
 * Installing Ruby
@@ -19,6 +20,7 @@ Things you may want to cover:
     please use link to install RVM (https://rvm.io/rvm/install)
 
     $ rvm install 3.0.2
+ 
     $ ruby --version
 
     Rails requires Ruby version 2.7.0 or later. It is preferred to use latest Ruby version. If the version number returned is less than that number (such     as 2.3.7, or 1.8.7), you'll need to install a fresh copy of Ruby.
@@ -47,7 +49,7 @@ Things you may want to cover:
 
 * Clone repository in your local machine
 
-    git clone repository
+    git clone https://github.com/madhavanror/EkanekUpload.git
 
     $cd EkanekUpload
 
