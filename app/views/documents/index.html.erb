@@ -1,0 +1,46 @@
+<div class='bg-img'>
+<h1>EKANEK</h1>
+<div class="container document">
+  <div class="container">
+    <% if flash[:notice].present? %>
+      <span class="text-success text-center"> <%=flash[:notice]%> </span>
+    <% end%>
+    <% if flash[:error].present? %>
+      <span class="text-danger text-center"> <%=flash[:error]%> </span>
+    <% end %>
+  </div>
+  <br>
+    <%= link_to "New Document", new_document_path , class: 'btn btn-sm btn-primary float-end'%>   
+  <br>   
+  <br> 
+
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Document Name</th>
+        <th scope="col">Document Preview</th>
+        <th scope="col">Download Link</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>  
+    <tbody>
+      <% no = 1 %> 
+      <% @documents.each do |document| %>      
+        <tr>
+          <th scope="row"><%=no%></th> 
+          <td><%= document.title %></td>
+          <% if document.doc.present? %>
+            <td><%= link_to document.doc.blob.filename, rails_blob_path(document.doc.blob, disposition: 'preview'), target: "_blank" %></td>
+          <% else %>
+            <td>Document not available</td>
+          <% end %>
+          <td><%= link_to "Download", download_url(document), class: document_download_style(document), download: '', target: "_parent" %></td>
+          <td><%= link_to "Delete", document, data: { turbo_method: :delete, turbo_confirm: "Are you sure you want to delete #{document.title}?" }, class: 'btn btn-sm btn-outline-danger bi bi-trash'%></td>   
+        </tr>
+        <% no += 1 %>   
+      <% end %>   
+    </tbody>  
+  </table>
+</div> 
+</div>

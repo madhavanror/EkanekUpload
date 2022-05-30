@@ -1,0 +1,5 @@
+one:
+  name: 'doc'
+  record_type: 'Document'
+  record_id: <%= ActiveRecord::FixtureSet.identify(:one) %>
+  blob_id: <%= ActiveRecord::FixtureSet.identify(:png) %>

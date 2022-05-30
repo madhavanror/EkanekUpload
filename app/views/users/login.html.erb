@@ -1,0 +1,36 @@
+<div class='bg-img'>
+<h1>EKANEK</h1>
+<br><br>
+<%= form_with url: login_path, local: true do |form| %>
+  <div id="login">
+        <h3 class="text-center pt-5">Login Form</h3>
+        <br>
+        <div class="container login text-center">
+          <span class="text-danger text-center"> <%=flash[:error]%> </span>
+        </div>
+        <div class="container">
+            <div id="login-row" class="row justify-content-center align-items-center">
+                <div id="login-column" class="col-md-6">
+                    <div id="login-box" class="col-md-12">
+                            <div class="form-group">
+                                <%= form.label  "Email:", class: 'text-info' %>
+                                <%= form.text_field :email %>
+                            </div>
+                            <div class="form-group">
+                                <%= form.label  "password:", class: 'text-info' %>
+                                <%= form.password_field :password %>
+                            </div>
+                            <div class="form-group text-center">
+                                <%= form.submit 'Login', id: 'submit', class: 'btn btn-sm btn-primary' %>
+                            </div>
+                            <div id="register-link" class="text-right">
+                              <span> If You Are New User Register Here</span>
+                              <%= link_to "Sign Up", sign_up_path, class: 'btn btn-sm btn-primary sign-up' %>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<% end %>
+</div>

@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+body h1 {
+  padding: 20px;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: asset_url("office.webp");
+
+  /* Control the height of the image */
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100%;
+}
+
+#login .container #login-row #login-column #login-box {
+  margin-top: 120px;
+  max-width: 600px;
+  height: 320px;
+  border: 1px solid #9C9C9C;
+  padding: 50px;
+  background: #fff;
+}
+
+#new-register-row #new-register-column #new-register-box {
+  margin-top: 120px;
+  max-width: 650px;
+  height: 500px;
+  border: 1px solid #9C9C9C;
+  padding: 50px;
+  width: 650px;
+  background: #fff;
+}
+
+#new-document-row #new-document-column #new-document-box {
+  margin-top: 120px;
+  max-width: 650px;
+  height: 400px;
+  border: 1px solid #9C9C9C;
+  padding: 50px;
+  width: 650px;
+  background: #fff;
+}
+
+#new-document-box .form-group {
+  margin-bottom: 2rem;
+}
+
+#login .container #login-row #login-column #login-box #login-form {
+  padding: 20px;
+}
+
+#login-box #email, #login-box #password, #new-register-box input {
+  width: 300px;
+  height: 40px;
+}
+
+#login-box .form-group {
+  margin-bottom: 2rem;
+}
+
+#login-box #submit {
+  width: 200px;
+}
+
+#new-register-box #submit {
+  width: 200px;
+  margin-left: 50px;
+}
+
+#new-register-box #back-to-login {
+  width: 200px;
+}
+
+#new-document-box #dashboard {
+  width:200px;
+}
+
+#new-document-box #doc-submit {
+  width: 200px;
+  margin-left: 50px;
+}
+
+#new-register-box .text-info {
+  width: 200px;
+}
+
+#login .container #login-row #login-column #login-box #login-form #register-link {
+  margin-top: -85px;
+}
+
+#login-box .sign-up {
+  width: 144px;
+  float: left;
+  margin-left: 10px;
+}
+
+#register-link span {
+  float: left;
+  text-align: center;
+}
+
+.text-info {
+  width: 100px;
+  font-size: 16px;
+}
+.document, .new-account {
+
+  .form-group {
+    float: left;
+    width: 100%;
+    padding-bottom: 15px;
+    position: relative;
+  }
+
+  .submit-form-group {
+    float: left;
+    width: 45%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .submit-form-group input[type='submit'] {
+    float: none;
+    display: inline-block;
+  }
+
+  .pl-23 {
+    padding-left: 10% !important;
+  }
+}
+
+.user {
+  float: right;
+  font-size: x-large;
+  position: absolute;
+  z-index: 999;
+  right: 0;
+  top: 20px;
+}
+
+.user_name {
+  text-decoration: underline;
+}
+
+.user a {
+  margin-right: 20px;
+}
+
+.float-end {
+  float: right;
+  color: #007bff;
+  background: #fff;
+}
+
+.document table {
+  background-color: #fff;
+}
+
